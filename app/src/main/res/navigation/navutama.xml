@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uiUtama"
+    app:startDestination="@id/utama4">
+    <fragment
+        android:id="@+id/ululAzmi"
+        android:name="com.example.uas.UlulAzmi"
+        android:label="ui_ulul_azmi"
+        tools:layout="@layout/ui_ulul_azmi">
+
+        <action
+            android:id="@+id/action_ululAzmi_to_nabiIbrahim"
+            app:destination="@id/nabiIbrahim"
+            app:popUpTo="@id/nabiIbrahim"/>
+        <action
+            android:id="@+id/action_ululAzmi_to_nabiIsa"
+            app:destination="@id/nabiIsa" />
+        <action
+            android:id="@+id/action_ululAzmi_to_nabiMuhammad"
+            app:destination="@id/nabiMuhammad" />
+        <action
+            android:id="@+id/action_ululAzmi_to_nabiMusa"
+            app:destination="@id/nabiMusa" />
+        <action
+            android:id="@+id/action_ululAzmi_to_nabiMusa2"
+            app:destination="@id/nabiMusa" />
+        <action
+            android:id="@+id/action_ululAzmi_to_nabiNuh"
+            app:destination="@id/nabiNuh" />
+        <action
+            android:id="@+id/action_ululAzmi_to_utama4"
+            app:destination="@id/utama4"
+            app:popUpTo="@id/utama4" />
+    </fragment>
+    <fragment
+        android:id="@+id/utama4"
+        android:name="com.example.uas.Utama"
+        android:label="ui_utama"
+        tools:layout="@layout/ui_utama">
+        <action
+            android:id="@+id/action_utama4_to_ululAzmi"
+            app:destination="@id/ululAzmi" />
+        <action
+            android:id="@+id/action_utama4_to_rukuniman"
+            app:destination="@id/rukuniman" />
+        <action
+            android:id="@+id/action_utama4_to_rukunIslam"
+            app:destination="@id/rukunIslam" />
+    </fragment>
+    <fragment
+        android:id="@+id/nabiIbrahim"
+        android:name="com.example.uas.NabiIbrahim"
+        android:label="ui_nabi_ibrahim"
+        tools:layout="@layout/ui_nabi_ibrahim" >
+        <action
+            android:id="@+id/action_nabiIbrahim_to_ululAzmi"
+            app:destination="@id/ululAzmi" />
+    </fragment>
+    <fragment
+        android:id="@+id/nabiIsa"
+        android:name="com.example.uas.NabiIsa"
+        android:label="ui_nabi_isa"
+        tools:layout="@layout/ui_nabi_isa" >
+        <action
+            android:id="@+id/action_nabiIsa_to_ululAzmi"
+            app:destination="@id/ululAzmi" />
+    </fragment>
+    <fragment
+        android:id="@+id/nabiMuhammad"
+        android:name="com.example.uas.NabiMuhammad"
+        android:label="ui_nabi_muhammad"
+        tools:layout="@layout/ui_nabi_muhammad" >
+        <action
+            android:id="@+id/action_nabiMuhammad_to_ululAzmi"
+            app:destination="@id/ululAzmi" />
+    </fragment>
+    <fragment
+        android:id="@+id/nabiMusa"
+        android:name="com.example.uas.NabiMusa"
+        android:label="ui_nabi_musa"
+        tools:layout="@layout/ui_nabi_musa" >
+        <action
+            android:id="@+id/action_nabiMusa_to_ululAzmi"
+            app:destination="@id/ululAzmi" />
+    </fragment>
+    <fragment
+        android:id="@+id/nabiNuh"
+        android:name="com.example.uas.NabiNuh"
+        android:label="ui_nabi_nuh"
+        tools:layout="@layout/ui_nabi_nuh" >
+        <action
+            android:id="@+id/action_nabiNuh_to_ululAzmi"
+            app:destination="@id/ululAzmi" />
+    </fragment>
+    <fragment
+        android:id="@+id/rukuniman"
+        android:name="com.example.uas.Rukuniman"
+        android:label="fragment_rukuniman"
+        tools:layout="@layout/ui_rukuniman" >
+        <action
+            android:id="@+id/action_rukuniman_to_utama4"
+            app:destination="@id/utama4" />
+    </fragment>
+    <fragment
+        android:id="@+id/rukunIslam"
+        android:name="com.example.uas.RukunIslam"
+        android:label="ui_rukun_islam"
+        tools:layout="@layout/ui_rukun_islam" >
+        <action
+            android:id="@+id/action_rukunIslam_to_utama4"
+            app:destination="@id/utama4" />
+    </fragment>
+</navigation>
